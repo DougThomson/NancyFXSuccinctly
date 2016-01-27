@@ -16,7 +16,7 @@ namespace NancyApplicationSelfHostingSandbox
                 ErrorMessage = "<strong>Error message this is...</strong>"
             };
 
-            Get[@"/"] = _ => View["firstView/hellonancy", demoModel];
+            Get[@"/base"] = _ => View["firstView/hellonancy", demoModel];
 
         }
     }
