@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Nancy;
+using Nancy.ModelBinding;
+using NancyApplicationSelfHostingSandbox.Models;
 
 namespace NancyApplicationSelfHostingSandbox.modules
 {
@@ -11,6 +13,17 @@ namespace NancyApplicationSelfHostingSandbox.modules
         public AddressRoutes() : base("/address")
         {
             Get[@"/"] = _ => View["address/index"];
+
+            Post[@"/save"] = _ =>
+            {
+                var myAddress = this.Bind<Address>();
+                if (myAddress != null)
+                {
+                    return View["address/display", myAddress];
+                }
+
+                return View["address/error"];
+            };
         }
     }
 }

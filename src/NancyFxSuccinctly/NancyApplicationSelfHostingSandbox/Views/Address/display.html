@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Nancy demo | Data binding example</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="Page-header">
+        <h1 style="display: inline-block">Nancy Demo <small>Data Binding Example</small>
+        </h1>
+        <h1 style="display: inline-block" class="pull-right"><small><a href="~/" title="Click to return to home page">Home <span class="glyphicon glyphicon-home"></span></a></small>
+        </h1>
+    </div>
+
+    <p class="lead">The results from your address form are as Follows...</p>
+
+    <p>Record ID : <strong class="text-success">@Model.RecordId</strong></p>
+
+    <p>Name: <strong class="text-success">@Model.Name</strong></p>
+    <p>Address: <strong class="text-success">@Model.BuildingAddress</strong></p>
+    <p>Town: <strong class="text-success">@Model.Town</strong></p>
+</div>
+</body>
+</html>
