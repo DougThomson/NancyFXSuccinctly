@@ -16,7 +16,7 @@ namespace NancyApplicationSelfHostingSandbox.modules
 
             Post[@"/save"] = _ =>
             {
-                var myAddress = this.Bind<Address>(f => f.BuildingAddress, n => n.Name);
+                var myAddress = this.Bind<List<Address>>();
                 if (myAddress != null)
                 {
                     return View["address/display", myAddress];
