@@ -13,5 +13,6 @@ namespace NancyApplicationSelfHostingSandbox.Models
         public string Town { get; set; }
         public string County { get; set; }
         public string PostalCode { get; set; }
+        public string[] AliasList { get; set; }
     }
 }

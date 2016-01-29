@@ -18,7 +18,7 @@
         </h1>
     </div>
 
-    <form method="post">
+    <form method="post" action="/address/save">
 
         <p class="lead">Please fill in the form below and click 'send data' to perform a data bind to the post action</p>
 
@@ -47,6 +47,16 @@
         <div class="form-group">
             <label for="PostalCode">Postal Code</label>
             <input type="text" class="form-control" id="PostalCode" name="PostalCode"/>
+        </div>
+
+        <div class="form-group">
+            <label for="AliasList"></label>
+            <input type="text" class="form-control" id="AliasList" name="AliasList" placeholder="Comma separated list here"/>
+        </div>
+
+        <div class="form-group">
+            <label for="OptionsList">Select your options</label>
+            Option 1 <input type="checkbox" name="OptionsList" value="One"/><br/>
         </div>
 
         <button type="submit" class="btn btn-primary">Send Data</button>
