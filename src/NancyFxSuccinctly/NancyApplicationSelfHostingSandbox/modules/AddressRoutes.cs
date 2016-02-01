@@ -13,16 +13,20 @@ namespace NancyApplicationSelfHostingSandbox.modules
     {
         public AddressRoutes() : base("/address")
         {
-            Get[@"/"] = _ => View["address/index"];
+            Get[@"/"] = _ =>  View["address/index"];
 
             Post[@"/save"] = _ =>
             {
                 var myAddress = this.Bind<List<Address>>().First();
-                var result = this.Validate(myAddress);
+                return View["address/display"];
+
+                //var result = this.Validate(myAddress);
+
                 
-                return result.IsValid 
+                
+                /*return result.IsValid 
                     ? View["address/display", myAddress]
-                    : View["address/error"];
+                    : View["address/error"];*/
             };
         }
     }

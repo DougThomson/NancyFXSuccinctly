@@ -21,39 +21,39 @@
     <form method="post" action="/address/save">
 
         <!-- Address item 0-->
-        <input id="RecordId" name="RecordId[0]" type="hidden" value="1"/>
+        <input id="RecordId" name="RecordId" type="hidden" value="1"/>
 
         <p class="lead">Please fill in the form below and click 'send data' to perform a data bind to the post action</p>
 
         <div class="form-group">
             <label for="Name">Name</label>
-            <input type="text" class="form-control" id="Name" name="Name[0]" placeholder="Enter Persons name here"/>
+            <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Persons name here"/>
         </div>
 
         <div class="form-group">
             <label for="BuildingAddress">Building Address</label>
-            <input type="text" class="form-control" id="BuildingAddress" name="BuildingAddress[0]" placeholder="Enter Building Address here"/>
+            <input type="text" class="form-control" id="BuildingAddress" name="BuildingAddress" placeholder="Enter Building Address here"/>
         </div>
 
         <div class="form-group">
             <label for="Town">Town</label>
-            <input type="text" class="form-control" id="Town" name="Town[0]" placeholder="Enter Town here"/>
+            <input type="text" class="form-control" id="Town" name="Town" placeholder="Enter Town here"/>
         </div>
 
         <div class="form-group">
             <label for="County">County</label>
-            <input type="text" class="form-control" id="County" name="County[0]" placeholder="Enter County here"/>
+            <input type="text" class="form-control" id="County" name="County" placeholder="Enter County here"/>
         </div>
 
         <div class="form-group">
             <label for="PostalCode">Postal Code</label>
-            <input type="text" class="form-control" id="PostalCode" name="PostalCode[0]"/>
+            <input type="text" class="form-control" id="PostalCode" name="PostalCode"/>
         </div>
 
 
 
         <!-- Address item 1-->
-        <input id="RecordId" name="RecordId[1]" type="hidden" value="1" />
+       <!-- Used for demo of binding to multiple items of the same type <input id="RecordId" name="RecordId[1]" type="hidden" value="1" />
 
         <p class="lead">Please fill in the form below and click 'send data' to perform a data bind to the post action</p>
 
@@ -85,8 +85,8 @@
 
         <div class="form-group">
             <label for="AliasList"></label>
-           <!-- <input type="text" class="form-control" id="AliasList" name="AliasList" placeholder="Comma separated list here"/>-->
-        </div>
+           $1$ <input type="text" class="form-control" id="AliasList" name="AliasList" placeholder="Comma separated list here"/>#1#
+        </div>-->
 
         <div class="form-group">
             <label for="OptionsList">Select your options</label>
