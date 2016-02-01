@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Nancy;
 using Nancy.ModelBinding;
+using Nancy.Validation;
 using NancyApplicationSelfHostingSandbox.Models;
 
 namespace NancyApplicationSelfHostingSandbox.modules
@@ -16,13 +17,12 @@ namespace NancyApplicationSelfHostingSandbox.modules
 
             Post[@"/save"] = _ =>
             {
-                var myAddress = this.Bind<List<Address>>();
-                if (myAddress != null)
-                {
-                    return View["address/display", myAddress];
-                }
-
-                return View["address/error"];
+                var myAddress = this.Bind<List<Address>>().First();
+                var result = this.Validate(myAddress);
+                
+                return result.IsValid 
+                    ? View["address/display", myAddress]
+                    : View["address/error"];
             };
         }
     }
