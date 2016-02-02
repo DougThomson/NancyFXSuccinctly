@@ -55,7 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthenticatedUser.cs" />
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="CustomBootStrapper.cs" />
+    <Compile Include="FakeDatabase.cs" />
+    <Compile Include="FakeDatabaseUser.cs" />
     <Compile Include="FirstModel.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="modules\AddressRoutes.cs" />
