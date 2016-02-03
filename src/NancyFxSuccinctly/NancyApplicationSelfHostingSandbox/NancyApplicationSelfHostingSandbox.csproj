@@ -62,7 +62,10 @@
     <Compile Include="FakeDatabaseUser.cs" />
     <Compile Include="FirstModel.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\LoginParams.cs" />
+    <Compile Include="modules\AccountRoutes.cs" />
     <Compile Include="modules\AddressRoutes.cs" />
+    <Compile Include="modules\AuthRoutes.cs" />
     <Compile Include="modules\IndexModule.cs" />
     <Compile Include="Controllers\SelfHostSandboxModule.cs" />
     <Compile Include="Program.cs" />
@@ -136,6 +139,7 @@
     <Content Include="Views\Address\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\Login\index.html" />
     <Content Include="Views\firstView\master.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

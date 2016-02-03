@@ -22,7 +22,7 @@ namespace NancyApplicationSelfHostingSandbox
 
             var formsAuthConfiguration = new FormsAuthenticationConfiguration
             {
-                RedirectUrl = "~/account/login",
+                RedirectUrl = "http://localhost:3579/account/login",
                 UserMapper = container.Resolve<IUserMapper>()
             };
 
