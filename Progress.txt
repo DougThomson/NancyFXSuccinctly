@@ -11,4 +11,4 @@
 70 01/02/2016 Authentication
 74  01/02/2016 Authentication FieldNotFoundException, tidy up from List<Address> binding
 77 02/02/2016 Authentication, implimenting views for logging in
-79 03/02/2016 Chapter 11 Bootstrapping. Still trying to fault find FieldNotFoundException. AccountRoutes and AuthRoutes are new
+79 03/02/2016 Chapter 11 Bootstrapping. Still trying to fault find MissingFieldException. AccountRoutes and AuthRoutes are new
