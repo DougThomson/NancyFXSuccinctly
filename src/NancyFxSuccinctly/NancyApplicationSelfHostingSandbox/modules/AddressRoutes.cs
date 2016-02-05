@@ -18,15 +18,15 @@ namespace NancyApplicationSelfHostingSandbox.modules
             Post[@"/save"] = _ =>
             {
                 var myAddress = this.Bind<Address>();
-                return View["address/display"];
+//                return View["address/display"];
 
-                //var result = this.Validate(myAddress);
+                var result = this.Validate(myAddress);
 
                 
                 
-                /*return result.IsValid 
+                return result.IsValid 
                     ? View["address/display", myAddress]
-                    : View["address/error"];*/
+                    : View["address/error"];
             };
         }
     }

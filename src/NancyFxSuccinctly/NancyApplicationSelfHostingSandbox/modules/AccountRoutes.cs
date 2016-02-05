@@ -13,7 +13,7 @@ namespace NancyApplicationSelfHostingSandbox.modules
     {
         public AccountRoutes() : base("/account")
         {
-            Get[@"/login"] = _ => View["account/login"];
+           Get[@"/login"] = _ => View["account/login/index"];
 
             Post[@"/login"] = _ =>
             {

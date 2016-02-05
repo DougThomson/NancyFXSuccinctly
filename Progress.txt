@@ -9,6 +9,12 @@
 58 28/01/2016 data annotation
 
 70 01/02/2016 Authentication
-74  01/02/2016 Authentication FieldNotFoundException, tidy up from List<Address> binding
+74  01/02/2016 Authentication MissingFieldException, tidy up from List<Address> binding
 77 02/02/2016 Authentication, implimenting views for logging in
-79 03/02/2016 Chapter 11 Bootstrapping. Still trying to fault find MissingFieldException. AccountRoutes and AuthRoutes are new
+79 03/02/2016 Chapter 11 Bootstrapping. Still trying to fault find MissingFieldException. AccountRoutes and AuthRoutes are new.
+  CHECK /account/login route and views are set up
+  CHANGE /Views/Login/index to /Views/Account/Login/index.html
+  CHECK AuthRoutes it's pointing to /auth/index
+  
+79 04/02/2016 Resolved MissingFieldException
+79 05/02/2016 Resolved missing validatorfatories. Installed Nancy.Validation.DataAnnotations.Extensions and targeted .net 45

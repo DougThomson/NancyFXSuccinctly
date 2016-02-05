@@ -12,6 +12,7 @@ namespace NancyApplicationSelfHostingSandbox
         protected override void ConfigureRequestContainer(TinyIoCContainer container, NancyContext context)
         {
             base.ConfigureRequestContainer(container, context);
+           // base.ConfigureApplicationContainer(container); wasn't needed for fixing ValidatorFactories issue. Leaving for now as a reminder
             //TODO resolve dependancy
             container.Register<IUserMapper, FakeDatabase>();
         }
